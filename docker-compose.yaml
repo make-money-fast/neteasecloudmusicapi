@@ -1,11 +1,9 @@
 version: '3'
 services:
   web:
-    image: registry.cn-hangzhou.aliyuncs.com/mrjnamei/neteasecloudmusicapi:latest
+    image: registry.cn-hangzhou.aliyuncs.com/mrjnamei/neteasecloudmusicapi:stable
     command:
       - node
       - app.js
     ports:
-      - 6000:3000
-    volumes:
-      - ./data:/app/data
+      - 8000:3000
