@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs')
 const path = require('path')
-const tmpPath = require('os').tmpdir()
+var tmpPath = './data'
 
 async function start() {
   // 检测是否存在 anonymous_token 文件,没有则生成

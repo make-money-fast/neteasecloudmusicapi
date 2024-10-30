@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:20-alpine3.19
 
 RUN apk add --no-cache tini
 
@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY --chown=node:node . ./
 
-RUN yarn --network-timeout=100000
+# RUN yarn --network-timeout=100000
 
 EXPOSE 3000
 
