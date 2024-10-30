@@ -1,4 +1,7 @@
-FROM node:20-alpine3.19
+# FROM node:20-alpine3.19
+# docker tag node:20-alpine3.19 registry.cn-hangzhou.aliyuncs.com/mrjnamei/neteasecloudmusicapi:node
+# docker push registry.cn-hangzhou.aliyuncs.com/mrjnamei/neteasecloudmusicapi:node
+FROM registry.cn-hangzhou.aliyuncs.com/mrjnamei/neteasecloudmusicapi:node
 
 ENV NODE_ENV production
 USER node
